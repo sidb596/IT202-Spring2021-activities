@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>sidb596</title>
+
+    <style>
+        .big {
+            88 font-size:3em;
+        }
+        .blue {
+            color: blue;
+        }
+        .red {
+            color: #D50032
+        }
+        .bigBorder {
+            border: black 3px solid;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1" class="bigBorder big red">UIC</div>
+    <div id="div2">
+        <img width="25%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Illinois_at_Chicago_circle_logo.svg/1200px-University_of_Illinois_at_Chicago_circle_logo.svg.png">
+    </div>
+    <div id="div3">
+        This div should be programmatically removed.
+    </div>
+
+    <ul id="list">
+        <li class="blue">IT202</li>
+    </ul>
+
+    <script>
+        var myobj = document.getElementById("div3");
+        myobj.remove();
+        var list = document.getElementById('list');
+        var entry = document.createElement('li');
+        entry.appendChild(document.createTextNode("Computer Science"));
+        list.appendChild(entry);
+        list.classList.add("blue");
+		
+		let div4 = div2.cloneNode(true);
+		div1.after(div4);
+    </script>
+
+
+</body>
+
+</html>

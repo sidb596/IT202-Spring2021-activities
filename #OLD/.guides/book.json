@@ -1,0 +1,17 @@
+{
+ "name": "activities",
+ "children": [
+  {
+   "title": "Page 1",
+   "id": "9b87b93a-e19a-02a1-ff52-c1b68f49031b",
+   "pageId": "9b87b93a-e19a-02a1-ff52-c1b68f49031b",
+   "type": "page"
+  },
+  {
+   "title": "Page 2",
+   "id": "7ee68f5d-737a-08e0-0d71-b364c166d104",
+   "pageId": "7ee68f5d-737a-08e0-0d71-b364c166d104",
+   "type": "page"
+  }
+ ]
+}

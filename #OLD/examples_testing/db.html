@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+		var db = new Dexie("myFriends");
+		db.version(1).stores({
+			friends: '++id, name, age',
+			enemies: 'id, name'
+		});
+		
+		db.friends.where("age").equals(22).toArray()
+		.then(data => console.log(data))
+    </script>
+</body>
+
+</html>
